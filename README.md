@@ -96,6 +96,7 @@ Your content goes here.
 - optional GitHub icon and link
 - optional version menu
 - hero title and description
+- document page description visibility through `document.showDescription`
 - group titles, icons, order, and home page counts
 
 ## Deployment

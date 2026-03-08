@@ -44,6 +44,9 @@ interface SiteConfig {
     title: string;
     description: string;
   };
+  document?: {
+    showDescription?: boolean;
+  };
   groups: SiteGroupConfig[];
 }
 

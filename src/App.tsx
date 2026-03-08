@@ -98,6 +98,9 @@ export default function App() {
   );
   const activeDoc = docsMap.get(activeSlug) ?? docsManifest.docs[0];
   const activeGroup = groupsMap.get(activeDoc.groupId);
+  const shouldShowDocDescription =
+    docsManifest.config.document?.showDescription !== false &&
+    Boolean(activeDoc.description.trim());
   const activeDocIndex = docsManifest.docs.findIndex(
     (doc) => doc.slug === activeDoc.slug,
   );
@@ -623,14 +626,18 @@ export default function App() {
                           {" "}
                           {activeGroup?.title ?? activeDoc.groupId}{" "}
                         </div>{" "}
-                        <h1 className="mb-4 text-4xl font-semibold tracking-tight text-[var(--text-strong)] transition-colors duration-500 sm:text-5xl">
+                        <h1
+                          className={`text-4xl font-semibold tracking-tight text-[var(--text-strong)] transition-colors duration-500 sm:text-5xl ${shouldShowDocDescription ? "mb-4" : "mb-0"}`}
+                        >
                           {" "}
                           {activeDoc.title}{" "}
                         </h1>{" "}
-                        <p className="text-base leading-relaxed text-[var(--text-main)] transition-colors duration-500 sm:text-lg">
-                          {" "}
-                          {activeDoc.description}{" "}
-                        </p>{" "}
+                        {shouldShowDocDescription ? (
+                          <p className="text-base leading-relaxed text-[var(--text-main)] transition-colors duration-500 sm:text-lg">
+                            {" "}
+                            {activeDoc.description}{" "}
+                          </p>
+                        ) : null}{" "}
                       </header>{" "}
                       {isLoadingDoc ? (
                         <div className="space-y-4">

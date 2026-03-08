@@ -36,6 +36,10 @@ export interface SiteHeroConfig {
   description: string;
 }
 
+export interface SiteDocumentConfig {
+  showDescription?: boolean;
+}
+
 export interface SiteGroupConfig {
   id: string;
   title: string;
@@ -47,6 +51,7 @@ export interface SiteGroupConfig {
 export interface SiteConfig {
   brand: SiteBrandConfig;
   hero: SiteHeroConfig;
+  document?: SiteDocumentConfig;
   groups: SiteGroupConfig[];
 }
 

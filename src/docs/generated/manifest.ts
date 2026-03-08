@@ -81,7 +81,10 @@ export const docsManifest: DocsManifest = {
         "order": 8,
         "homeLinks": 4
       }
-    ]
+    ],
+    "document": {
+      "showDescription": true
+    }
   },
   "groups": [
     {
