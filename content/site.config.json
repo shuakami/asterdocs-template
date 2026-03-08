@@ -1,0 +1,82 @@
+{
+  "brand": {
+    "name": "AsterDocs",
+    "browserTitle": "AsterDocs Template",
+    "versionMenu": {
+      "enabled": false,
+      "label": "Version",
+      "items": [
+        "Free, Pro, & Team",
+        "Enterprise Cloud",
+        "Enterprise Server 3.11"
+      ]
+    },
+    "github": {
+      "href": "https://github.com/shuakami/asterdocs-template",
+      "title": "Open repository",
+      "openInNewTab": true
+    }
+  },
+  "hero": {
+    "title": "High-performance Markdown documentation, without fighting your UI.",
+    "description": "AsterDocs keeps the current visual style, pushes content and search into Markdown, and ships a production-ready GitHub Pages workflow with fast builds and simple configuration."
+  },
+  "groups": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "icon": "Rocket",
+      "order": 1,
+      "homeLinks": 4
+    },
+    {
+      "id": "authoring",
+      "title": "Authoring",
+      "icon": "MessageSquare",
+      "order": 2,
+      "homeLinks": 4
+    },
+    {
+      "id": "configuration",
+      "title": "Configuration",
+      "icon": "Settings",
+      "order": 3,
+      "homeLinks": 4
+    },
+    {
+      "id": "navigation",
+      "title": "Navigation",
+      "icon": "Layout",
+      "order": 4,
+      "homeLinks": 4
+    },
+    {
+      "id": "search",
+      "title": "Search",
+      "icon": "Search",
+      "order": 5,
+      "homeLinks": 4
+    },
+    {
+      "id": "performance",
+      "title": "Performance",
+      "icon": "Cpu",
+      "order": 6,
+      "homeLinks": 4
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment",
+      "icon": "Globe",
+      "order": 7,
+      "homeLinks": 4
+    },
+    {
+      "id": "extension",
+      "title": "Extension",
+      "icon": "Building",
+      "order": 8,
+      "homeLinks": 4
+    }
+  ]
+}

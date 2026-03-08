@@ -1,0 +1,455 @@
+import type {SearchEntry} from '../types';
+
+export const searchIndex: SearchEntry[] = [
+  {
+    "id": "doc:getting-started/overview",
+    "kind": "doc",
+    "slug": "getting-started/overview",
+    "title": "Overview",
+    "description": "Understand the goal of the template before you start adding content.",
+    "keywords": "Getting Started This page explains the architecture so the next changes stay easy to maintain. template markdown performance This template keeps the current UI style, but replaces hard coded article content with a Markdown content system. If you want the fastest path to a working site, continue with Quick Start. What changed The main layout still looks the same, but the data source is now different: content/docs/ / .md stores article content content/site.config.json stores global site settings scripts/generate docs.ts builds navigation, search data, and article HTML React only renders prepared data instead of parsing Markdown in the browser Why this is better Content is easier to maintain Adding a new document no longer requires editing the main page component. You add a Markdown file and fill in a small frontmatter block. Search is no longer tied to page markup Search data is prepared during the build, so runtime logic stays light and predictable. UI stays stable The header, home grid, left navigation, main article area, and right table of contents all keep the current style. Only the content pipeline changes. Suggested workflow 1. Define your groups in site.config.json 2. Add Markdown files under content/docs 3. Keep article content out of React components",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:getting-started/overview:what-changed",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "what-changed",
+    "title": "What changed",
+    "description": "What changed The main layout still looks the same, but the data source is now different: `content/docs/**/*.md",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance What changed The main layout still looks the same, but the data source is now different: `content/docs/**/*.md` stores article content `content/site.config.json` stores global site settings `scripts/generate-docs.ts` builds navigation, search data, and article HTML React only renders prepared data instead of parsing Markdown in the browser",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/overview:why-this-is-better",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "why-this-is-better",
+    "title": "Why this is better",
+    "description": "Why this is better",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance Why this is better",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/overview:content-is-easier-to-maintain",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "content-is-easier-to-maintain",
+    "title": "Content is easier to maintain",
+    "description": "Content is easier to maintain Adding a new document no longer requires editing the main page component. You ad",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance Content is easier to maintain Adding a new document no longer requires editing the main page component. You add a Markdown file and fill in a small frontmatter block.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/overview:search-is-no-longer-tied-to-page-markup",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "search-is-no-longer-tied-to-page-markup",
+    "title": "Search is no longer tied to page markup",
+    "description": "Search is no longer tied to page markup Search data is prepared during the build, so runtime logic stays light",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance Search is no longer tied to page markup Search data is prepared during the build, so runtime logic stays light and predictable.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/overview:ui-stays-stable",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "ui-stays-stable",
+    "title": "UI stays stable",
+    "description": "UI stays stable The header, home grid, left navigation, main article area, and right table of contents all kee",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance UI stays stable The header, home grid, left navigation, main article area, and right table of contents all keep the current style. Only the content pipeline changes.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/overview:suggested-workflow",
+    "kind": "section",
+    "slug": "getting-started/overview",
+    "sectionId": "suggested-workflow",
+    "title": "Suggested workflow",
+    "description": "Suggested workflow Define your groups in `site.config.json` Add Markdown files under `content/docs` Keep artic",
+    "keywords": "Overview Getting Started Understand the goal of the template before you start adding content. template markdown performance Suggested workflow Define your groups in `site.config.json` Add Markdown files under `content/docs` Keep article content out of React components",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:getting-started/quick-start",
+    "kind": "doc",
+    "slug": "getting-started/quick-start",
+    "title": "Quick Start",
+    "description": "Run the project and add your first document with the smallest possible setup.",
+    "keywords": "Getting Started This page shows the minimum steps needed to start using the template. setup install docs Install dependencies Start development Before the dev server starts, the project runs npm run docs:build and generates the manifest, search index, and article modules. Add a document Create a Markdown file like this: Important frontmatter fields group must match a group id from content/site.config.json order controls order inside the same group and defaults to 999 tags are added to the search index Rebuild content data",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:getting-started/quick-start:install-dependencies",
+    "kind": "section",
+    "slug": "getting-started/quick-start",
+    "sectionId": "install-dependencies",
+    "title": "Install dependencies",
+    "description": "Install dependencies",
+    "keywords": "Quick Start Getting Started Run the project and add your first document with the smallest possible setup. setup install docs Install dependencies",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/quick-start:start-development",
+    "kind": "section",
+    "slug": "getting-started/quick-start",
+    "sectionId": "start-development",
+    "title": "Start development",
+    "description": "Start development Before the dev server starts, the project runs `npm run docs:build` and generates the manife",
+    "keywords": "Quick Start Getting Started Run the project and add your first document with the smallest possible setup. setup install docs Start development Before the dev server starts, the project runs `npm run docs:build` and generates the manifest, search index, and article modules.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/quick-start:add-a-document",
+    "kind": "section",
+    "slug": "getting-started/quick-start",
+    "sectionId": "add-a-document",
+    "title": "Add a document",
+    "description": "Add a document Create a Markdown file like this:",
+    "keywords": "Quick Start Getting Started Run the project and add your first document with the smallest possible setup. setup install docs Add a document Create a Markdown file like this:",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/quick-start:important-frontmatter-fields",
+    "kind": "section",
+    "slug": "getting-started/quick-start",
+    "sectionId": "important-frontmatter-fields",
+    "title": "Important frontmatter fields",
+    "description": "Important frontmatter fields `group` must match a group id from `content/site.config.json` `order` controls or",
+    "keywords": "Quick Start Getting Started Run the project and add your first document with the smallest possible setup. setup install docs Important frontmatter fields `group` must match a group id from `content/site.config.json` `order` controls order inside the same group and defaults to `999` `tags` are added to the search index",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:getting-started/quick-start:rebuild-content-data",
+    "kind": "section",
+    "slug": "getting-started/quick-start",
+    "sectionId": "rebuild-content-data",
+    "title": "Rebuild content data",
+    "description": "Rebuild content data",
+    "keywords": "Quick Start Getting Started Run the project and add your first document with the smallest possible setup. setup install docs Rebuild content data",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:authoring/markdown-authoring",
+    "kind": "doc",
+    "slug": "authoring/markdown-authoring",
+    "title": "Markdown Authoring",
+    "description": "Learn how headings, code blocks, lists, and internal links work in this template.",
+    "keywords": "Authoring The authoring rules are intentionally simple so content stays portable and stable. markdown content headings Heading levels Headings drive three parts of the experience: in article anchor ids the right side table of contents section level search entries Use ## and ### for the clearest structure. Code blocks The template does not do heavy runtime code processing, which keeps article switching fast. Internal links Relative .md links are converted into app level document navigation during the build. Images Store images in public/ and reference them with root based paths for the simplest setup.",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:authoring/markdown-authoring:heading-levels",
+    "kind": "section",
+    "slug": "authoring/markdown-authoring",
+    "sectionId": "heading-levels",
+    "title": "Heading levels",
+    "description": "Heading levels Headings drive three parts of the experience: in-article anchor ids the right-side table of con",
+    "keywords": "Markdown Authoring Authoring Learn how headings, code blocks, lists, and internal links work in this template. markdown content headings Heading levels Headings drive three parts of the experience: in-article anchor ids the right-side table of contents section-level search entries Use `##` and `###` for the clearest structure.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:authoring/markdown-authoring:code-blocks",
+    "kind": "section",
+    "slug": "authoring/markdown-authoring",
+    "sectionId": "code-blocks",
+    "title": "Code blocks",
+    "description": "Code blocks The template does not do heavy runtime code processing, which keeps article switching fast.",
+    "keywords": "Markdown Authoring Authoring Learn how headings, code blocks, lists, and internal links work in this template. markdown content headings Code blocks The template does not do heavy runtime code processing, which keeps article switching fast.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:authoring/markdown-authoring:internal-links",
+    "kind": "section",
+    "slug": "authoring/markdown-authoring",
+    "sectionId": "internal-links",
+    "title": "Internal links",
+    "description": "Internal links Relative `.md` links are converted into app-level document navigation during the build.",
+    "keywords": "Markdown Authoring Authoring Learn how headings, code blocks, lists, and internal links work in this template. markdown content headings Internal links Relative `.md` links are converted into app-level document navigation during the build.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:authoring/markdown-authoring:images",
+    "kind": "section",
+    "slug": "authoring/markdown-authoring",
+    "sectionId": "images",
+    "title": "Images",
+    "description": "Images Store images in `public/` and reference them with root-based paths for the simplest setup.",
+    "keywords": "Markdown Authoring Authoring Learn how headings, code blocks, lists, and internal links work in this template. markdown content headings Images Store images in `public/` and reference them with root-based paths for the simplest setup.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:configuration/site-config",
+    "kind": "doc",
+    "slug": "configuration/site-config",
+    "title": "Site Configuration",
+    "description": "Control the brand, hero section, groups, and icons from one JSON file.",
+    "keywords": "Configuration Site-level settings are kept in one place so they do not leak across components. config groups icons The whole site is configured through content/site.config.json. What this file controls brand name and version selector labels home page title and description group titles, icons, order, and home page link counts Example Group behavior A group must exist in the config file first. After that, any document with the same group id will appear under that section in the home page and sidebar.",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:configuration/site-config:what-this-file-controls",
+    "kind": "section",
+    "slug": "configuration/site-config",
+    "sectionId": "what-this-file-controls",
+    "title": "What this file controls",
+    "description": "What this file controls brand name and version selector labels home page title and description group titles, i",
+    "keywords": "Site Configuration Configuration Control the brand, hero section, groups, and icons from one JSON file. config groups icons What this file controls brand name and version selector labels home page title and description group titles, icons, order, and home page link counts",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:configuration/site-config:example",
+    "kind": "section",
+    "slug": "configuration/site-config",
+    "sectionId": "example",
+    "title": "Example",
+    "description": "Example",
+    "keywords": "Site Configuration Configuration Control the brand, hero section, groups, and icons from one JSON file. config groups icons Example",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:configuration/site-config:group-behavior",
+    "kind": "section",
+    "slug": "configuration/site-config",
+    "sectionId": "group-behavior",
+    "title": "Group behavior",
+    "description": "Group behavior A group must exist in the config file first. After that, any document with the same `group` id ",
+    "keywords": "Site Configuration Configuration Control the brand, hero section, groups, and icons from one JSON file. config groups icons Group behavior A group must exist in the config file first. After that, any document with the same `group` id will appear under that section in the home page and sidebar.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:navigation/sidebar-and-toc",
+    "kind": "doc",
+    "slug": "navigation/sidebar-and-toc",
+    "title": "Sidebar and TOC",
+    "description": "The sidebar and the table of contents are generated from config and Markdown headings.",
+    "keywords": "Navigation Navigation becomes part of the content system instead of being hard-coded in the page. sidebar toc anchors Sidebar generation The sidebar order comes from content/site.config.json, while article order comes from document frontmatter. This keeps structure predictable and makes article maintenance easier for content authors. Table of contents generation The right side table of contents is built from ## and ### headings during the build. That means the page does not need to scan the DOM again after every article load. Unified navigation behavior Clicks from the sidebar, search panel, and table of contents all go through the same app level navigation flow: 1. open the target document 2. load the generated article module 3. scroll to the target section if needed",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:navigation/sidebar-and-toc:sidebar-generation",
+    "kind": "section",
+    "slug": "navigation/sidebar-and-toc",
+    "sectionId": "sidebar-generation",
+    "title": "Sidebar generation",
+    "description": "Sidebar generation The sidebar order comes from `content/site.config.json`, while article order comes from doc",
+    "keywords": "Sidebar and TOC Navigation The sidebar and the table of contents are generated from config and Markdown headings. sidebar toc anchors Sidebar generation The sidebar order comes from `content/site.config.json`, while article order comes from document frontmatter. This keeps structure predictable and makes article maintenance easier for content authors.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:navigation/sidebar-and-toc:table-of-contents-generation",
+    "kind": "section",
+    "slug": "navigation/sidebar-and-toc",
+    "sectionId": "table-of-contents-generation",
+    "title": "Table of contents generation",
+    "description": "Table of contents generation The right-side table of contents is built from `##` and `###` headings during the",
+    "keywords": "Sidebar and TOC Navigation The sidebar and the table of contents are generated from config and Markdown headings. sidebar toc anchors Table of contents generation The right-side table of contents is built from `##` and `###` headings during the build. That means the page does not need to scan the DOM again after every article load.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:navigation/sidebar-and-toc:unified-navigation-behavior",
+    "kind": "section",
+    "slug": "navigation/sidebar-and-toc",
+    "sectionId": "unified-navigation-behavior",
+    "title": "Unified navigation behavior",
+    "description": "Unified navigation behavior Clicks from the sidebar, search panel, and table of contents all go through the sa",
+    "keywords": "Sidebar and TOC Navigation The sidebar and the table of contents are generated from config and Markdown headings. sidebar toc anchors Unified navigation behavior Clicks from the sidebar, search panel, and table of contents all go through the same app-level navigation flow: open the target document load the generated article module scroll to the target section if needed",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:search/site-search",
+    "kind": "doc",
+    "slug": "search/site-search",
+    "title": "Site Search",
+    "description": "Search data is prepared during the build so runtime search stays light and simple.",
+    "keywords": "Search This search approach is designed for docs templates that want low complexity and solid speed. search index sections What goes into the index The build step adds these fields to the search index: document title summary description tags body text section titles and section snippets Why this stays fast The page does not scan rendered content to search. It only queries the prebuilt index. For small and medium docs sites, this is usually the best balance between speed, bundle size, and maintenance cost. Result ranking Results favor: 1. direct title matches 2. section title matches 3. summary and keyword matches 4. body text matches",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:search/site-search:what-goes-into-the-index",
+    "kind": "section",
+    "slug": "search/site-search",
+    "sectionId": "what-goes-into-the-index",
+    "title": "What goes into the index",
+    "description": "What goes into the index The build step adds these fields to the search index: document title `summary` `descr",
+    "keywords": "Site Search Search Search data is prepared during the build so runtime search stays light and simple. search index sections What goes into the index The build step adds these fields to the search index: document title `summary` `description` `tags` body text section titles and section snippets",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:search/site-search:why-this-stays-fast",
+    "kind": "section",
+    "slug": "search/site-search",
+    "sectionId": "why-this-stays-fast",
+    "title": "Why this stays fast",
+    "description": "Why this stays fast The page does not scan rendered content to search. It only queries the prebuilt index. For",
+    "keywords": "Site Search Search Search data is prepared during the build so runtime search stays light and simple. search index sections Why this stays fast The page does not scan rendered content to search. It only queries the prebuilt index. For small and medium docs sites, this is usually the best balance between speed, bundle size, and maintenance cost.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:search/site-search:result-ranking",
+    "kind": "section",
+    "slug": "search/site-search",
+    "sectionId": "result-ranking",
+    "title": "Result ranking",
+    "description": "Result ranking Results favor: direct title matches section title matches summary and keyword matches body text",
+    "keywords": "Site Search Search Search data is prepared during the build so runtime search stays light and simple. search index sections Result ranking Results favor: direct title matches section title matches summary and keyword matches body text matches",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:performance/performance-strategy",
+    "kind": "doc",
+    "slug": "performance/performance-strategy",
+    "title": "Performance Strategy",
+    "description": "The template focuses on build-time generation, light runtime logic, and on-demand article loading.",
+    "keywords": "Performance If this project is going to be your long-term template, the performance model should be clear from day one. performance lazy-loading build-time What the template does now Build time Markdown rendering Article HTML is prepared during the build, so the browser does not need to parse Markdown at runtime. On demand article loading Navigation and search metadata load up front, but article bodies are split into separate modules and loaded only when needed. Neighbor prefetching The previous and next article are prefetched after navigation to keep common reading flows smooth. Why this matters If all Markdown content ships in the first bundle, the home page and document view both get heavier as your site grows. Splitting metadata from article bodies keeps the initial experience lean while preserving a simple authoring workflow.",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:performance/performance-strategy:what-the-template-does-now",
+    "kind": "section",
+    "slug": "performance/performance-strategy",
+    "sectionId": "what-the-template-does-now",
+    "title": "What the template does now",
+    "description": "What the template does now",
+    "keywords": "Performance Strategy Performance The template focuses on build-time generation, light runtime logic, and on-demand article loading. performance lazy-loading build-time What the template does now",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:performance/performance-strategy:build-time-markdown-rendering",
+    "kind": "section",
+    "slug": "performance/performance-strategy",
+    "sectionId": "build-time-markdown-rendering",
+    "title": "Build-time Markdown rendering",
+    "description": "Build-time Markdown rendering Article HTML is prepared during the build, so the browser does not need to parse",
+    "keywords": "Performance Strategy Performance The template focuses on build-time generation, light runtime logic, and on-demand article loading. performance lazy-loading build-time Build-time Markdown rendering Article HTML is prepared during the build, so the browser does not need to parse Markdown at runtime.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:performance/performance-strategy:on-demand-article-loading",
+    "kind": "section",
+    "slug": "performance/performance-strategy",
+    "sectionId": "on-demand-article-loading",
+    "title": "On-demand article loading",
+    "description": "On-demand article loading Navigation and search metadata load up front, but article bodies are split into sepa",
+    "keywords": "Performance Strategy Performance The template focuses on build-time generation, light runtime logic, and on-demand article loading. performance lazy-loading build-time On-demand article loading Navigation and search metadata load up front, but article bodies are split into separate modules and loaded only when needed.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:performance/performance-strategy:neighbor-prefetching",
+    "kind": "section",
+    "slug": "performance/performance-strategy",
+    "sectionId": "neighbor-prefetching",
+    "title": "Neighbor prefetching",
+    "description": "Neighbor prefetching The previous and next article are prefetched after navigation to keep common reading flow",
+    "keywords": "Performance Strategy Performance The template focuses on build-time generation, light runtime logic, and on-demand article loading. performance lazy-loading build-time Neighbor prefetching The previous and next article are prefetched after navigation to keep common reading flows smooth.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:performance/performance-strategy:why-this-matters",
+    "kind": "section",
+    "slug": "performance/performance-strategy",
+    "sectionId": "why-this-matters",
+    "title": "Why this matters",
+    "description": "Why this matters If all Markdown content ships in the first bundle, the home page and document view both get h",
+    "keywords": "Performance Strategy Performance The template focuses on build-time generation, light runtime logic, and on-demand article loading. performance lazy-loading build-time Why this matters If all Markdown content ships in the first bundle, the home page and document view both get heavier as your site grows. Splitting metadata from article bodies keeps the initial experience lean while preserving a simple authoring workflow.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:deployment/deployment",
+    "kind": "doc",
+    "slug": "deployment/deployment",
+    "title": "Deployment",
+    "description": "Understand what is generated during build and what should be checked before shipping.",
+    "keywords": "Deployment This page explains the build pipeline and the safest release checklist for the template. deployment build validation Build pipeline npm run build runs npm run docs:build first. That generates: the docs manifest, groups, and search index one content module per article Then Vite bundles everything into the final static site. Recommended checks Before shipping, verify these steps: 1. npm run lint 2. npm run build 3. new documents appear in the home page and sidebar 4. search finds new titles and keywords",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:deployment/deployment:build-pipeline",
+    "kind": "section",
+    "slug": "deployment/deployment",
+    "sectionId": "build-pipeline",
+    "title": "Build pipeline",
+    "description": "Build pipeline `npm run build` runs `npm run docs:build` first. That generates: the docs manifest, groups, and",
+    "keywords": "Deployment Deployment Understand what is generated during build and what should be checked before shipping. deployment build validation Build pipeline `npm run build` runs `npm run docs:build` first. That generates: the docs manifest, groups, and search index one content module per article Then Vite bundles everything into the final static site.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:deployment/deployment:recommended-checks",
+    "kind": "section",
+    "slug": "deployment/deployment",
+    "sectionId": "recommended-checks",
+    "title": "Recommended checks",
+    "description": "Recommended checks Before shipping, verify these steps: `npm run lint` `npm run build` new documents appear in",
+    "keywords": "Deployment Deployment Understand what is generated during build and what should be checked before shipping. deployment build validation Recommended checks Before shipping, verify these steps: `npm run lint` `npm run build` new documents appear in the home page and sidebar search finds new titles and keywords",
+    "scoreBoost": 48
+  },
+  {
+    "id": "doc:extension/extensibility",
+    "kind": "doc",
+    "slug": "extension/extensibility",
+    "title": "Extensibility",
+    "description": "The template already separates content, config, generation, and runtime, so future changes stay manageable.",
+    "keywords": "Extension This page shows where to extend the template without undoing the current structure. extension multi-language content-source Current layers The project is already split into four clear layers: content: content/docs/ / .md config: content/site.config.json generation: scripts/generate docs.ts runtime: src/App.tsx and src/docs/runtime.ts Easy next steps Multi language docs You can add language folders and let the build step create separate manifests. Stronger search You can keep the UI and replace only the query logic in src/docs/runtime.ts. Custom Markdown blocks You can extend the build step with extra Markdown rules instead of moving content logic back into page components. Remote content sources You can fetch content in the generation step and still output the same manifest and article modules.",
+    "scoreBoost": 80
+  },
+  {
+    "id": "section:extension/extensibility:current-layers",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "current-layers",
+    "title": "Current layers",
+    "description": "Current layers The project is already split into four clear layers: content: `content/docs/**/*.md` config: `c",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Current layers The project is already split into four clear layers: content: `content/docs/**/*.md` config: `content/site.config.json` generation: `scripts/generate-docs.ts` runtime: `src/App.tsx` and `src/docs/runtime.ts`",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:extension/extensibility:easy-next-steps",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "easy-next-steps",
+    "title": "Easy next steps",
+    "description": "Easy next steps",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Easy next steps",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:extension/extensibility:multi-language-docs",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "multi-language-docs",
+    "title": "Multi-language docs",
+    "description": "Multi-language docs You can add language folders and let the build step create separate manifests.",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Multi-language docs You can add language folders and let the build step create separate manifests.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:extension/extensibility:stronger-search",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "stronger-search",
+    "title": "Stronger search",
+    "description": "Stronger search You can keep the UI and replace only the query logic in `src/docs/runtime.ts`.",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Stronger search You can keep the UI and replace only the query logic in `src/docs/runtime.ts`.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:extension/extensibility:custom-markdown-blocks",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "custom-markdown-blocks",
+    "title": "Custom Markdown blocks",
+    "description": "Custom Markdown blocks You can extend the build step with extra Markdown rules instead of moving content logic",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Custom Markdown blocks You can extend the build step with extra Markdown rules instead of moving content logic back into page components.",
+    "scoreBoost": 48
+  },
+  {
+    "id": "section:extension/extensibility:remote-content-sources",
+    "kind": "section",
+    "slug": "extension/extensibility",
+    "sectionId": "remote-content-sources",
+    "title": "Remote content sources",
+    "description": "Remote content sources You can fetch content in the generation step and still output the same manifest and art",
+    "keywords": "Extensibility Extension The template already separates content, config, generation, and runtime, so future changes stay manageable. extension multi-language content-source Remote content sources You can fetch content in the generation step and still output the same manifest and article modules.",
+    "scoreBoost": 48
+  }
+];
